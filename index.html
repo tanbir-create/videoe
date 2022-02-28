@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -50,151 +50,176 @@
 
 
 
-    <div class="main">
+        <div class="main">
 
-        <div>
-            <img src="images/img1.jpg" alt="">
-        </div>
-
-
-        <p class="article-p">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus similique deleniti ex voluptatem. Iure illum enim eligendi minus libero neque esse beatae pariatur dolor aliquid. Dicta voluptas officia itaque libero?
-            Sequi eum libero quas delectus quidem blanditiis non? Eum impedit excepturi animi, reprehenderit fuga molestiae maxime eaque ipsam voluptatibus provident nostrum officia sed optio consequuntur nihil dolores amet. Amet, nisi?
-        </p>
-
-
-        <div>
-            <img src="images/img2.jpg" alt="">
-        </div>
-
-
-        <p class="article-p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur dolorum sint quae expedita neque ut cupiditate officiis. Ex similique perspiciatis rerum adipisci iure, omnis laborum magnam hic impedit nostrum.
-            Maxime itaque libero nisi eaque, autem porro, ex aliquam eius, ad ipsa dicta quis quod animi tenetur consequuntur sequi accusantium minima vitae quibusdam. Officiis aliquam nam dignissimos. Possimus, tenetur cum!
-        </p>
-
-        <div id="video-container">
-            <video class="video"  src="images/dr-anupama.mp4">
-            
-            </video>
-            <div class="button buttons">
-                <button class="play-pause"></button> ⠀
-            </div>
-            <div class="controls">
-                <div class="progress-bar">
-                    <div class="progress"></div>
+            <div id="imagetext-container">
+                <div>
+                    <img src="images/img1.jpg" alt="">
                 </div>
+        
+        
+                <p class="article-p">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus similique deleniti ex voluptatem. Iure illum enim eligendi minus libero neque esse beatae pariatur dolor aliquid. Dicta voluptas officia itaque libero?
+                    Sequi eum libero quas delectus quidem blanditiis non? Eum impedit excepturi animi, reprehenderit fuga molestiae maxime eaque ipsam voluptatibus provident nostrum officia sed optio consequuntur nihil dolores amet. Amet, nisi?
+                </p>
+        
+        
+                <div>
+                    <img src="images/img2.jpg" alt="">
+                </div>
+        
+        
+                <p class="article-p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur dolorum sint quae expedita neque ut cupiditate officiis. Ex similique perspiciatis rerum adipisci iure, omnis laborum magnam hic impedit nostrum.
+                    Maxime itaque libero nisi eaque, autem porro, ex aliquam eius, ad ipsa dicta quis quod animi tenetur consequuntur sequi accusantium minima vitae quibusdam. Officiis aliquam nam dignissimos. Possimus, tenetur cum!
+                </p>
+            </div>
+
+            <div id="video-container">
+                <video class="video"  src="images/dr-anupama.mp4">
                 
-                <div class="buttons btns">
-                    <button class="play-pause"></button>
+                </video>
+                <div class="button buttons" style="height: 0px;">
+                    <button class="play-pause" ></button> 
                 </div>
+                <div class="controls hide" id="controls">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    
+                    <div class="buttons btns">
+                        <button class="play-pause"></button>
+                    </div>
 
-                <div id="time-remaining" > 
-                   
+                    <div id="time-remaining" > 
+                    
+                    </div>
                 </div>
             </div>
+
+
+            <div id="article-stats">
+                <div >
+                    <div id="like-post" class="center article-btn">
+                        <img src="images/like-icon.svg" alt=""> 
+                    </div>
+                    <p>12</p>
+                </div>
+                <div >
+                    <div id="comment-post" class="center article-btn">
+                        <img src="images/comment.svg" alt="">
+                        
+                    </div>
+                    <p>13</p>
+                </div>
+                <div id="share-post " class="article-btn">
+                    <img src="images/share.svg" alt=""> 
+                
+                </div>
+            </div>
+        </section>
+
+        <div style="height: 10px; width: 100%; background-color: #F6F6F6;">
+            
         </div>
 
+        <section  class="container" id="comments-container">
+        <p>Comment</p>
 
-        <div id="article-stats">
-            <div >
-                <div id="like-post" class="center article-btn">
-                    <img src="images/like-icon.svg" alt=""> 
-                </div>
-                <p>12</p>
-            </div>
-            <div >
-                <div id="comment-post" class="center article-btn">
-                    <img src="images/comment.svg" alt="">
+        <div id="comments">
 
+            <div class="comment">
+                <div class="comment-img">
+                    <img src="images/comment1.jpg" alt="">
                 </div>
-                <p>13</p>
+
+                <div class="comment-texts">
+                    <p>Leo Mango</p>
+                    <p class="color-light">2 days ago</p>
+
+                    <p class="the-comment">
+                        Nice article, adding new insight for me 👏🏻
+                    </p>
+
+                    <div class="comment-like">
+                        <div class="comment-like-btn">
+                            <img src="images/comment-like-button.svg" alt=""> 
+                        </div>
+                        <p>221</p>
+                    </div>
+                </div>
             </div>
-            <div id="share-post " class="article-btn">
-                <img src="images/share.svg" alt="">
+            <div class="comment">
+                <div class="comment-img">
+                    <img src="images/comment1.jpg" alt="">
+                </div>
+
+                <div class="comment-texts">
+                    <p>Leo Mango</p>
+                    <p class="color-light">2 days ago</p>
+
+                    <p class="the-comment">
+                        Nice article, adding new insight for me 👏🏻
+                    </p>
+
+                    <div class="comment-like">
+                        <div class="comment-like-btn">
+                            <img src="images/comment-like-button.svg" alt=""> 
+                        </div>
+                        <p>221</p>
+                    </div>
+                </div>
+            </div> <div class="comment">
+                <div class="comment-img">
+                    <img src="images/comment1.jpg" alt="">
+                </div>
+
+                <div class="comment-texts">
+                    <p>Leo Mango</p>
+                    <p class="color-light">2 days ago</p>
+
+                    <p class="the-comment">
+                        Nice article, adding new insight for me 👏🏻
+                    </p>
+
+                    <div class="comment-like">
+                        <div class="comment-like-btn">
+                            <img src="images/comment-like-button.svg" alt=""> 
+                        </div>
+                        <p>221</p>
+                    </div>
+                </div>
+            </div> <div class="comment">
+                <div class="comment-img">
+                    <img src="images/comment1.jpg" alt="">
+                </div>
+
+                <div class="comment-texts">
+                    <p>Leo Mango</p>
+                    <p class="color-light">2 days ago</p>
+
+                    <p class="the-comment">
+                        Nice article, adding new insight for me 👏🏻
+                    </p>
+
+                    <div class="comment-like">
+                        <div class="comment-like-btn">
+                            <img src="images/comment-like-button.svg" alt=""> 
+                        </div>
+                        <p>221</p>
+                    </div>
+                </div>
             </div>
+        
+        
+
         </div>
+
+    <!-- FROM HERE  -->
+
     </section>
 
-    <div style="height: 10px; width: 100%; background-color: #F6F6F6;">
-        
-    </div>
-
-    <section  class="container">
-    <p>Comment</p>
-
-    <div id="comments">
-
-        <div class="comment">
-            <div class="comment-img">
-                <img src="images/comment1.jpg" alt="">
-            </div>
-
-            <div class="comment-texts">
-                <p>Leo Mango</p>
-                <p class="color-light">2 days ago</p>
-
-                <p class="the-comment">
-                    Nice article, adding new insight for me 👏🏻
-                </p>
-
-                <div class="comment-like">
-                    <div class="comment-like-btn">
-                        <img src="images/comment-like-button.svg" alt=""> 
-                    </div>
-                    <p>221</p>
-                </div>
-            </div>
-        </div>
-
-       
-        <div class="comment">
-            <div class="comment-img">
-                <img src="images/comment1.jpg" alt="">
-            </div>
-
-            <div class="comment-texts">
-                <p>Leo Mango</p>
-                <p class="color-light">2 days ago</p>
-
-                <p class="the-comment">
-                    Whle it’s always amusing to talk about this topic the reality is that they do no such thing.
-                </p>
-
-                <div class="comment-like">
-                    <div class="comment-like-btn">
-                        <img src="images/comment-like-button.svg" alt=""> 
-                    </div>
-                    <p>221</p>
-                </div>
-            </div>
-        </div>
-        
-        
-        <div class="comment">
-            <div class="comment-img">
-                <img src="images/comment1.jpg" alt="">
-            </div>
-
-            <div class="comment-texts">
-                <p>Leo Mango</p>
-                <p class="color-light">2 days ago</p>
-
-                <p class="the-comment">
-                    Nice article, adding new insight for me 👏🏻
-                </p>
-
-                <div  class="comment-like">
-                    <div class="comment-like-btn">
-                        <img src="images/comment-like-button.svg" alt=""> 
-                    </div>
-                    <p>221</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
+    <!-- TO HERE -->
     <div id="post-comment">
         <input type="text" placeholder="Write a comment...">
         <div id="post-commment-btn">
@@ -202,10 +227,8 @@
         </div>
     </div>
 
-    </section>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
 
     <script src="js/script.js"></script>
 
